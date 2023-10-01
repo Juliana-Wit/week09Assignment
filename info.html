@@ -9,14 +9,14 @@
 <body class="container">
 
  <h1>About Poodles</h1> <!--Main header to title the page-->
-
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- Allows the user to navigate through both the Poodles and the About Poodles pages through a navbar dropdown-->
+<!--Below creates the navbar displayed on the About Poodles web page-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
         <a clas="navbar-brand" href="info.html">About Poodles</a>
         <button class="navbar-brand" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="flase" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav"> <!--This list is displays the different web pages and the dropdown menue on the navbar-->
                 <li class="nav-item">
                     
                     <a class="nav-link" href="index.html">Poodles</a>
@@ -26,7 +26,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="flase">
                         Dropdown
                     </a>
-                    <div class="dropdown-menue" aria-lableledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menue" aria-lableledby="navbarDropdownMenuLink"> <!--This creates the dropdown menue and menue items-->
                         <a class="dropdown-item" href="#""> Item One</a>
                         <a class="dropdown-item" href="#"> Item Two</a> 
                     </div>
@@ -34,7 +34,7 @@
             </ul>
         </div>
     </nav>
-<table class="table">
+<table class="table"> <!--Creates the table displayed on the About Poodles page-->
     <thead>
         <tr>
             <th scope="col">Image</th>
@@ -71,16 +71,16 @@
     </tbody>
 </table>
 
-<form>
+<form> <!--Creates the form displayed on the About Poodles page-->
     <div class="form-group">
         <lable for="poodleSize">Your Poodle's Size</lable>
         <input type="text" class="form-control" id="size"
     </div>
     <div class="form-group">
-<label for="poodleAge">Your Poodle's Age</label>
-<input type="number" class="form-control" id="age">
-</div>
-<button type="submit" class="btn btn-default">Submit</button>
+        <label for="poodleAge">Your Poodle's Age</label>
+        <input type="number" class="form-control" id="age">
+     </div>
+    <button type="submit" class="btn btn-default">Submit</button>
     </form>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
@@ -89,4 +89,3 @@
 </html>
 
 
-<!--Include a Navbar, Table, and form using Bootstrap-->
